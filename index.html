@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Capsule</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta charset="utf-8" />
+  <head>
+    <title>Capsule</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="utf-8" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="stylesheet" href="new-style.css">
-  
-  <style>
-    body {
-      padding-left: 25%;
-      padding-right: 25%;
-      text-align: center;
-      padding-top: 25%;
-    }
-    p {
-      font-family: "Times New Roman";
-      font-style: italic;
-    }
-    a {
-      text-decoration: none;
-      color: black;
-      font-family: "Times New Roman";
-    }
-  </style>
+    <link rel="stylesheet" href="new-style.css" />
 
-</head>
+    <style>
+      .images {
+        position: fixed;
+        display: block;
+        width: 100vw;
+        margin-left: -25vw;
+        margin-top: -48vh;
+        display: none;
+      }
+      .main {
+        padding-left: 25%;
+        padding-right: 25%;
+        text-align: center;
+        padding-top: 40vh;
+        position: relative;
+      }
+      img {
+        width: 100vw;
+        margin-left: -8px;
+      }
+      p {
+        font-family: "Times New Roman";
+        font-style: italic;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: "Times New Roman";
+        cursor: alias;
+      }
+      .ellipse {
+        border: dotted 1px black;
+        height: 20px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transform: rotate(-35deg);
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .ellipse:hover {
+        background-color: RGB(0, 255, 0);
+        border-color: RGB(0, 255, 0);
+        cursor: alias;
+        filter: blur(4px);
+      }
+      .order:hover + .images {
+        display: block;
+      }
+      .link:hover {
+        color: RGB(0,255,0);
+        filter: blur(4px);
+      }
+    </style>
+  </head>
 
+  <body>
+    
+    <div class="main">
+      <p class="order">
+        Order a Capsule
+      </p>
+      <div class="images">
+        <img src="https://cdn.glitch.com/60b7937d-8c91-4849-969f-6bd9267560ea%2Fcapsule-photo-1.jpg?v=1631746466180"/>
+        </div>
+      <br />
+      <div class="center">
+        <a target="#_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSettkFH42F_o3Dzc44WdVGhbzjUrSfkKb5gNqC1Dapsr3cjuw/viewform?usp=sf_link">
+        <div class="ellipse"></div></a>
+        
+      </div>
 
-<body>
-  <p>Write to us.</p>
-  <br>
-  <a href="mailto:cpslmagazine@gmail.com">cpslmagazine@gmail.com</a>
-</body>
-
+      <br /><br />
+      <p>Write to us</p>
+      <br />
+      <a class="link" target="#_blank" href="mailto:cpslmagazine@gmail.com"
+        >cpslmagazine@gmail.com</a
+      >
+    </div>
+  </body>
 </html>
